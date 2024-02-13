@@ -1,3 +1,5 @@
+// C program to find nth fibonacci term using recursion.
+
 #include <stdio.h>
 
 #define ull unsigned long long
@@ -18,9 +20,9 @@ int main()
     printf("Enter a number: ");
     scanf("%d", &n);
 
-    ull fibn_out = fibn(n);
+    ull res = fibn(n);
 
-    printf("%dth fibonacci term is: %llu\n", n, fibn_out);
+    printf("%dth fibonacci term is: %llu\n", n, res);
 
     return 0;
 }
