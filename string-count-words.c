@@ -4,7 +4,7 @@
 
 int main()
 {
-    char s[100];
+    char s[10001];
     printf("Enter a string: ");
     fgets(s, sizeof(s), stdin);
 
