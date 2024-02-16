@@ -1,4 +1,4 @@
-// C program to print all unique elements in an array.
+// C program to print all duplicate elements in an array.
 
 #include <stdio.h>
 
@@ -19,11 +19,11 @@ int main()
         freq[arr[i]]++;
     }
 
-    printf("Unique elements in the array are: ");
+    printf("Duplicate elements in the array are: ");
 
     for (int i = 0; i < 100000; i++)
     {
-        if (freq[i] == 1)
+        if (freq[i] > 1)
             printf("%d ", i);
     }
 
