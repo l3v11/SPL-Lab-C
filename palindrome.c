@@ -18,9 +18,9 @@ int main()
     }
 
     if (rev == num)
-        printf("%d is a palindrome number\n", num);
+        printf("%d is a palindrome number.\n", num);
     else
-        printf("%d is not a palindrome number\n", num);
+        printf("%d is not a palindrome number.\n", num);
 
     return 0;
 }
