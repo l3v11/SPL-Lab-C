@@ -4,19 +4,19 @@
 
 int main()
 {
-    int phy, chem, bio, math, comp;
+    float phy, chem, bio, math, comp;
 
     printf("Enter marks of five subjects:\n");
     printf("Physics: ");
-    scanf("%d", &phy);
+    scanf("%f", &phy);
     printf("Chemistry: ");
-    scanf("%d", &chem);
+    scanf("%f", &chem);
     printf("Biology: ");
-    scanf("%d", &bio);
+    scanf("%f", &bio);
     printf("Mathematics: ");
-    scanf("%d", &math);
+    scanf("%f", &math);
     printf("Computer: ");
-    scanf("%d", &comp);
+    scanf("%f", &comp);
 
     float res = (phy + chem + bio + math + comp) / 5.0;
     printf("\nPercentage: %.2f\n", res);

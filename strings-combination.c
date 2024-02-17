@@ -16,7 +16,7 @@ int main()
     while (s1[cnt] != 0)
         cnt++;
 
-    for (int i = 0; s2[i] != 0; i++)
+    for (int i = 0; s2[i] != '\0'; i++)
         s1[cnt++] = s2[i];
 
     s1[cnt] = '\0';
