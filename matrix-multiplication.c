@@ -14,11 +14,11 @@ int main()
         printf("Enter rows and columns for the second matrix: ");
         scanf("%d %d", &row2, &col2);
 
-        if (col1 == row2)
+        if (row1 == col2)
             break;
 
-        printf("ERROR: The number of columns of the first matrix should "
-               "be equal to the number of rows of the second matrix.\n");
+        printf("ERROR: The number of rows of the first matrix should be "
+               "equal to the number of columns of the second matrix.\n");
     }
 
     int matrixA[row1][col1];
@@ -41,7 +41,7 @@ int main()
         }
     }
 
-    int resultAB[col1][row2];
+    int resultAB[row1][col2];
     for (int i = 0; i < row1; i++)
     {
         for (int j = 0; j < col2; j++)
