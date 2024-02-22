@@ -4,19 +4,21 @@
 
 int main()
 {
-    int row1, col1;
-    printf("Enter rows and columns for the first matrix: ");
-    scanf("%d %d", &row1, &col1);
+    int row1, col1, row2, col2;
 
-    int row2, col2;
-    printf("Enter rows and columns for the second matrix: ");
-    scanf("%d %d", &row2, &col2);
-
-    if (col1 != row2)
+    while (1)
     {
+        printf("Enter rows and columns for the first matrix: ");
+        scanf("%d %d", &row1, &col1);
+
+        printf("Enter rows and columns for the second matrix: ");
+        scanf("%d %d", &row2, &col2);
+
+        if (col1 == row2)
+            break;
+
         printf("ERROR: The number of columns of the first matrix should "
-               "be equal to the number of rows of the second matrix.");
-        return 0;
+               "be equal to the number of rows of the second matrix.\n");
     }
 
     int matrixA[row1][col1];
